@@ -5,113 +5,122 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mohamed Fathi | Portfolio</title>
   <style>
-    body {
+    * {
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
       font-family: "Poppins", sans-serif;
-      background-color: #0d1117;
-      color: #c9d1d9;
+    }
+
+    body {
+      background: radial-gradient(circle at top left, #0d1117, #000);
+      color: #fff;
     }
 
     header {
-      text-align: center;
-      padding: 80px 20px 40px;
-      background: linear-gradient(135deg, #0d1117, #1DB954);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px 10%;
     }
 
     header h1 {
-      font-size: 2.5rem;
-      color: #ffffff;
-    }
-
-    header p {
-      font-size: 1.1rem;
-      color: #d1d5db;
-    }
-
-    section {
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 20px;
-      background: #161b22;
-      border-radius: 15px;
-      box-shadow: 0 0 20px rgba(0,0,0,0.3);
-    }
-
-    h2 {
       color: #1DB954;
-      text-align: center;
+      font-size: 1.6rem;
     }
 
-    .projects ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    .projects li {
-      margin: 10px 0;
-      background: #0d1117;
-      padding: 15px;
-      border-radius: 10px;
-      transition: 0.3s;
-    }
-
-    .projects li:hover {
-      background: #1DB95433;
-    }
-
-    a {
-      color: #58a6ff;
+    nav a {
+      color: #fff;
       text-decoration: none;
+      margin-left: 25px;
       font-weight: 500;
     }
 
-    a:hover {
-      text-decoration: underline;
+    nav a:hover {
+      color: #1DB954;
+    }
+
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 80px 10%;
+    }
+
+    .hero-text {
+      max-width: 50%;
+    }
+
+    .hero-text h2 {
+      font-size: 2.5rem;
+      color: #1DB954;
+    }
+
+    .hero-text h1 {
+      font-size: 3rem;
+      margin: 10px 0;
+    }
+
+    .hero-text p {
+      margin: 20px 0;
+      color: #ccc;
+      font-size: 1rem;
+    }
+
+    .btn {
+      background: #1DB954;
+      color: #fff;
+      padding: 12px 25px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #1ed760;
+    }
+
+    .hero-img img {
+      width: 300px;
+      border-radius: 50%;
+      border: 4px solid #1DB954;
     }
 
     footer {
       text-align: center;
       padding: 30px;
-      color: #8b949e;
-    }
-
-    .social a {
-      margin: 0 10px;
-      color: #1DB954;
-      font-size: 1.2rem;
-    }
-
-    .social a:hover {
-      color: #58a6ff;
+      color: #999;
+      margin-top: 50px;
+      font-size: 0.9rem;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Mohamed Fathi 👋</h1>
-    <p>AI  Student | Faculty of Computers and Information, Zagazig University</p>
+    <h1>Mohamed<span style="color:white;">.</span></h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
-  <section class="about">
-    <h2>About Me</h2>
-    <p>I'm passionate about Artificial Intelligence 🤖 and Data Analyst .  
-    I love learning new technologies, building projects, and exploring the world of data and security.</p>
-  </section>
-
-  <section class="projects">
-    <h2>My Projects</h2>
-    <ul>
-      <li><a href="https://github.com/yourusername/project1">🧮 Data Cleaning with Python</a> — Using NumPy & Pandas</li>
-    </ul>
-  </section>
-
-  <section class="contact">
-    <h2>Connect with Me</h2>
-    <div class="social">
-      <a href="https://www.linkedin.com/in/mohamed-fathi-0080b237a/">LinkedIn</a> |
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Hello, I'm</h2>
+      <h1>Mohamed Fathi</h1>
+      <h2>AI & Data Analysis Student</h2>
+      <p>I’m passionate about Artificial Intelligence 🤖 and Data Analysis 📊.  
+      I love learning, building projects, and exploring new technologies.</p>
+       <a href="https://www.linkedin.com/in/mohamed-fathi-0080b237a/">LinkedIn</a> |
       <a href="https://github.com/mohamedfathi2007">GitHub</a> |
-      <a href="26mohamed9fathi20samir07@gmail.com">Email</a>
+      <a href="26mohamed9fathi20samir07@gmail.com">Contact Me →</a>
+      <a href="https://wa.me/+201273130146" target="_blank" class="btn btn-whatsapp">
+    </div>
+    <div class="hero-img">
+      <img src="yourphoto.jpg" alt="Mohamed Fathi">
     </div>
   </section>
 
